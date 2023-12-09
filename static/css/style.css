@@ -1,0 +1,86 @@
+body{
+font-family: 'Courier New', Courier, monospace;
+background-color: azure;
+color: bisque;
+text-align: center;
+margin: 0;
+}
+
+#upload-form{
+    margin-top: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aliceblue;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+  #file-input {
+display: none;
+}  
+
+.upload-btn-wrapper {
+position: relative;
+overflow: hidden;
+margin-bottom: 20px;
+}
+
+.upload-btn-wrapper{
+font-size: 100px;
+position: absolute;
+left: 0;
+top: 0;
+opacity: 0;
+}
+
+.upload-btn-wrapper label{
+cursor: pointer;
+display: inline-block;
+padding: 15px 25px;
+font-size: 16px;
+font-weight: bold;
+border-radius: 16px;
+background-color: aquamarine;
+color: aqua;
+transition: background-color 0.9s ease-in-out;
+}
+
+.upload-btn-wrapper label:hover{
+background-color: black;
+}
+
+button{
+cursor: pointer;
+background-color: chocolate;
+color: brown;
+padding: 15px 25px;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+transition: background-color 0.3 ease;
+}
+
+button:hover {
+    background-color: aquamarine;   
+}
+
+.result-wrapper{
+    margin-top:20px ;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* for responsive design on diffrent devices */
+
+@media (max-width: 600px) {
+    .upload-btn-wrapper label , button{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #upload-form{
+        padding: 15px;
+    }
+
+}

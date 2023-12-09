@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>petpicks App;</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css') }}">
+    <!-- href "static/css/style.css" not best best practice -->
+</head>
+<body>
+   <h1> hello world;  </h1>
+
+   <!-- form.myform will make a class form also -->
+
+   <form id="upload-form">
+
+        <div id=" upload-btn-wrapper">
+            <label for="file-input">choose a file: </label>
+            <input type="file" name="file" id="file-input" accept="image/*" required>
+           
+        </div>
+        <button type="submit">Classify</button>
+
+   </form>
+
+   <div class = "result-wrapper" id="result-wrapper"></div>
+
+   <script src="{{url_for('static' , filename= 'js/scripts.js')}}"></script>
+</body>
+</html>
